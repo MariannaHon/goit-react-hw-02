@@ -1,0 +1,17 @@
+
+import css from './Feedback.module.css'
+
+const Feedback = ({ value, total, positive }) => {
+
+    return (
+        <div className={css.container}>
+            <p>Good: {value.good}</p>
+            <p>Neutral: {value.neutral}</p>
+            <p>Bad: {value.bad}</p>
+            <p>Total: {total}</p>
+            <p>Positive: {positive}%</p>
+        </div>
+    );
+}
+
+export default Feedback;
